@@ -32,7 +32,7 @@ comments_section = re.compile(r'<a name="_(Additional_)?(Comments_[Ff]rom)(_Part
 links_section = re.compile('''<a name="_[Uu]seful_[Ww]ebsites''')
 
 ###########################################################
-# Helper Classes
+# Helper Functions
 ###########################################################
 
 def strip_html(s):
@@ -191,7 +191,6 @@ for file in challenge_files:
                     continue
                 else:
                     document.links += line
-
 
             elif state['finished']:
                 break
